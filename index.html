@@ -1,72 +1,36 @@
 <!DOCTYPE html>
-<html style="background-color: black;" class="no-js" lang="en-US">
+<html lang="en">
 
 	<head>
 	
 		<!-- Meta -->
-		<!-- Iconos diseñados por <a href="https://www.flaticon.es/autores/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.es/" title="Flaticon"> www.flaticon.es</a>-->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 		<!-- Title -->
 		<title>Javi Matas Photo</title>
-		
-		<!-- Favicon -->
+	
 		<link rel="shortcut icon" href="images/logo.png">
 	
 		<!-- Bootstrap -->
 		<link href="layout/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<!-- Animations -->
-		<link href="layout/plugins/animate/animate.css" rel="stylesheet" />
-		
-		<!-- Font awesome -->
-		<link rel="stylesheet" type="text/css" href="layout/plugins/fontawesome/css/all.min.css" />
 		
 		<!-- Linea icons -->
 		<link rel="stylesheet" type="text/css" href="layout/plugins/linea/arrows/styles.css" />
 		<link rel="stylesheet" type="text/css" href="layout/plugins/linea/basic/styles.css" />
 		
-		
-		<!-- Owl Carousel -->
-		<link rel="stylesheet" type="text/css" href="layout/plugins/owlcarousel/owl.carousel.min.css" />
-		
-		<!-- Isotope -->
-    	<link rel="stylesheet" href="layout/plugins/isotope/isotope.css" type="text/css">
-		
 		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="layout/style.css">
-		<link rel="stylesheet" type="text/css" href="layout/media.css">
+		<link rel="stylesheet" type="text/css" href="layout/mediaQueries.css">
 		
 		<!-- Color schema -->
 		<link class="colors" rel="stylesheet" href="layout/colors/grey.css" type="text/css">
-		
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
-			<script src="layout/plugins/html5shiv/html5shiv.js"></script>
-			<script src="layout/plugins/respond/respond.min.js"></script>
-		<![endif]-->
 		
 	</head>
 	
 	<body>
 	
-		<!-- Loader -->
-		<div class="page-loader">
-
-			<div class="line-scale">
-
-				<div class="line line1"></div>
-				<div class="line line2"></div>
-				<div class="line line3"></div>
-				<div class="line line4"></div>
-				<div class="line line5"></div>
-			</div>
-		</div>
-		
 		<!-- Header -->
 		<header>
 			<nav  class="navbar">
@@ -85,8 +49,6 @@
 						<span class="line3"></span>
 					</a>
 
-					
-						
 				</div>
 			</nav>
 		</header>
@@ -112,21 +74,22 @@
 						<li><a href="cartel.html">CARTEL</a></li>
 						<li><a href="#about">Sobre mi</a></li>
 						<li><a href="#portfolio">Galeria</a></li>
-						<li><a href="#audiovisuales">Audiovisules</a></li>
-						<li><a href="#instagram">Instagram</a></li>
+						<li><a href="#audiovisuales">Audiovisuales</a></li>
 						<li><a href="#contact">Contactame</a></li>
 					</ul>
 					
 				</div>
 			</div>
+
 		</div>
 	
 		<!-- Intro -->
-		<div id="welcome" class="intro image-bg">
-		
+		<div class="intro image-bg" title="#">
+			
 			<!-- Text slider -->
 			<div class="intro-text">
 				<div class="container">
+
 					<span>I’m </span>
 					<span class="words-wrapper">
 						<b class="is-visible">Javi Matas</b>
@@ -138,36 +101,71 @@
 					
 				</div>
 			</div>
-			
-			
+	
 		</div>
-		<div><img class="logoimg" alt="#" src="images/logo2.png" style="position:absolute;bottom:0;right:0;" /></p></div>
-		<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+		<div class="base-wrapper">
+			<div class="base">
+				<img style="width: 50%;" src="images/iconos/Link.png" alt="link">
+			</div>
+			<a href="https://www.instagram.com/javimatasphoto/" target="_blank">
+			  <div class="hidden-childs hc-3">
+				<img style="width: 50%;" src="images/iconos/Instagram.png" alt="Instagram">
+			  </div>
+			</a>
+			
+			<a href="https://www.youtube.com/channel/UCZUFuVGmbh_rEkjotU85xUQ" target="_blank">
+			  <div class="hidden-childs hc-2">
+				<img style="width: 50%;" src="images/iconos/Youtube.png" alt="Youtube">
+			  </div>
+			</a>
+			
+			<a href="tel:+34660915804" target="_blank">
+			  <div class="hidden-childs hc-1">
+				<img style="width: 50%;" src="images/iconos/Movil.png" alt="Movil">
+			  </div>
+			</a>
+			
+			<a href="mailto:Javiermatas15@gmail.com" target="_blank">
+			  <div class="hidden-childs hc-4">
+				<img style="width: 50%;" src="images/iconos/Email.png" alt="Email">
+			  </div>
+			</a>
+
+		</div>
+		<!--Logo pantalla carga Abajo derecha-->
+		<div><img class="logoimg" alt="#" src="images/logo2.png" style="position:absolute;bottom:0;right:0;" /></div>
+
+		
 		<!-- About -->
-		<section id="about" style="background-color: black;padding-top: 8em; padding-bottom: 3em;">
+		<section id="about" style="background-color: black;padding-top: 20px; padding-bottom: 3em;">
 			<h1 style="color: white;padding-bottom: 2em;" class="text-center">SOBRE MI</h1>
 			<div class="container">
-			<div class="row text-center" style="color: white;">
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img style="width: 30%;" alt="#" src="images/iconos/coorporativo.svg">
-					<h2 style="padding-top: 1em;padding-bottom: 1em;">CORPORATIVO</h2>
-					<p>Llevamos tu marca, valores y objetivos al público de una forma vanguardista y original, siempre adaptada a las preferencias del cliente</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img style="width: 30%;" alt="#" src="images/iconos/metodologia.svg">
-					<h2 style="padding-top: 1em;padding-bottom: 1em;">METODOLOGIA</h2>
-					<p>Nuestro punto de partida es conocer tus objetivos, pasando por un proceso de Pre-producción, Rodaje/ Photoshoot, Post-producción. Una vez se realice la entrega, ofrecemos un servicio al cliente para cualquier modificación.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img style="width: 30%;" alt="#" src="images/iconos/usuario.svg">
-					<h2 style="padding-top: 1em;padding-bottom: 1em;">EVENTOS</h2>
-					<p>Cubrimos tus eventos de forma discreta y profesional, donde ningún detalle será pasado por alto, manteniendo la esencia del momento.</p>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12">
-					<img style="width: 30%;" alt="#" src="images/iconos/evento.svg">
-					<h2 style="padding-top: 1em;padding-bottom: 1em;">EQUIPO</h2>
-					<p>Utilizamos cámaras de cine y reflex, estabilizadores de última generación, programas informáticos profesionales y soporte en audio e iluminación para ofrecer una calidad excelante.</p>		
-				</div>
+				<div class="row text-center" style="color: white;">
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img style="width: 30%;" alt="#" src="images/iconos/coorporativo.svg">
+						<h2 style="padding-top: 1em;padding-bottom: 1em;">CORPORATIVO</h2>
+						<p>Llevamos tu marca, valores y objetivos al público de una forma vanguardista y original, siempre adaptada a las preferencias del cliente</p>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img style="width: 30%;" alt="#" src="images/iconos/metodologia.svg">
+						<h2 style="padding-top: 1em;padding-bottom: 1em;">METODOLOGIA</h2>
+						<p>Nuestro punto de partida es conocer tus objetivos, pasando por un proceso de Pre-producción, Rodaje/ Photoshoot, Post-producción. Una vez se realice la entrega, ofrecemos un servicio al cliente para cualquier modificación.</p>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img style="width: 30%;" alt="#" src="images/iconos/usuario.svg">
+						<h2 style="padding-top: 1em;padding-bottom: 1em;">EVENTOS</h2>
+						<p>Cubrimos tus eventos de forma discreta y profesional, donde ningún detalle será pasado por alto, manteniendo la esencia del momento.</p>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-12">
+						<img style="width: 30%;" alt="#" src="images/iconos/evento.svg">
+						<h2 style="padding-top: 1em;padding-bottom: 1em;">EQUIPO</h2>
+						<p>Utilizamos cámaras de cine y reflex, estabilizadores de última generación, programas informáticos profesionales y soporte en audio e iluminación para ofrecer una calidad excelante.</p>		
+					</div>
+
 				</div>		
 			</div>
 		</section>
@@ -180,10 +178,9 @@
 			<!-- Section title -->
 				<div  class="section-title text-center col-md-8 offset-md-2">
 
-				<div class="btn-group dropright" style="background-color: black;">
-
-  				<h1 style="color: white;padding-bottom: 20px;padding-top: 20px;" class="text-center">GALERIA</h1>
-				</div>
+					<div class="btn-group dropright" style="background-color: black;">
+						<h1 style="color: white;padding-bottom: 20px;padding-top: 40px;" class="text-center">GALERIA</h1>
+					</div>
 
 				<p>Galería de Fotos</p>
 			</div>
@@ -201,6 +198,7 @@
 					<li data-mixitup-control class="filter" data-filter=".Deporte">Deporte</li>
 					<li data-mixitup-control class="filter" data-filter=".Creativa">Creativas</li>
 					<li data-mixitup-control class="filter" data-filter=".Interiores">Interiores</li>
+
 				</ul>
 			</div>
 			
@@ -211,7 +209,7 @@
 				<li  class="portfolio-item mix all Naturaleza" data-my-order="1">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img alt="#" data-enlargeable width="100" style="cursor: zoom-in " class="imagen"src="images/works/Naturaleza/IN1.jpg" />
+								<img alt="IN1" data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN1.jpg" />
 							</div>
 						</div>							
 				</li>
@@ -220,7 +218,7 @@
 				<li class="portfolio-item mix all Urbana" data-my-order="2">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img alt="#"  data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Urbana/IU1.jpg"/>
+								<img alt="IU1"  data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU1.jpg"/>
 							</div>
 						</div>						
 				</li>
@@ -229,526 +227,360 @@
 				<li class="portfolio-item mix all Motor" data-my-order="3">		
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM1.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM1.jpg" alt="IM1" />
 							</div>
 						</div>											
 				</li>
+
 				
 				<!-- Item 4 -->
-				<!-- <li class="portfolio-item mix all Deporte" data-my-order="4">
-					<a href="portfolio/sample-one.html" class="link-wrapper" rel="item-four">
+				<li class="portfolio-item mix all Creativa" data-my-order="4">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen"  class="imagen" src="images/works/Deporte/ID1.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-				
-				<!-- Item 5 -->
-				<li class="portfolio-item mix all Creativa" data-my-order="5">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC1.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC1.jpg" alt="IC1"/>
 							</div>
 						</div>							
 				</li>
 				
-				<!-- Item 6 -->
-				<li class="portfolio-item mix all Interiores" data-my-order="6">
+				<!-- Item 5 -->
+				<li class="portfolio-item mix all Interiores" data-my-order="5">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II1.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II1.jpg" alt="II1" />
+							</div>
+						</div>							
+				</li>
+				
+
+				<!-- Item 6 -->
+				<li class="portfolio-item mix all Urbana" data-my-order="6">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU2.jpg" alt="IU2"/>
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 7 -->
-				<!-- <li class="portfolio-item mix all Naturaleza" data-my-order="7">
-					<a href="portfolio/sample-one.html" class="link-wrapper" rel="item-one">
+				<li class="portfolio-item mix all Motor" data-my-order="7">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen"src="images/works/Naturaleza/IN2.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM2.jpg" alt="IM2" />
 							</div>
-						</div>
-					</a>							
-				</li> -->
+						</div>							
+				</li>
 				
 				<!-- Item 8 -->
-				<li class="portfolio-item mix all Urbana" data-my-order="8">
+				<li class="portfolio-item mix all Deporte" data-my-order="8">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU2.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Deporte/ID2.jpg" alt="ID2" />
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 9 -->
-				<li class="portfolio-item mix all Motor" data-my-order="9">
+				<li class="portfolio-item mix all Creativa" data-my-order="9">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM2.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC2.jpg" alt="IC2"/>
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 10 -->
-				<li class="portfolio-item mix all Deporte" data-my-order="10">
+				<li class="portfolio-item mix all Interiores" data-my-order="10">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Deporte/ID2.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II2.jpg" alt="II2" />
 							</div>
 						</div>							
 				</li>
-				
 				<!-- Item 11 -->
-				<li class="portfolio-item mix all Creativa" data-my-order="11">
+				<li class="portfolio-item mix all Naturaleza" data-my-order="11">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC2.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN3.jpg" alt="IN3" />
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 12 -->
-				<li class="portfolio-item mix all Interiores" data-my-order="12">
+				<li class="portfolio-item mix all Urbana" data-my-order="12">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II2.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU3.jpg" alt="IU3"/>
 							</div>
 						</div>							
 				</li>
+				
 				<!-- Item 13 -->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="13">
+				<li class="portfolio-item mix all Motor" data-my-order="13">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen"src="images/works/Naturaleza/IN3.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM3.jpg" alt="IM3"/>
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 14 -->
-				<li class="portfolio-item mix all Urbana" data-my-order="14">
+				<li class="portfolio-item mix all Creativa" data-my-order="14">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU3.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC3.jpg" alt="IC3"/>
 							</div>
 						</div>							
 				</li>
 				
 				<!-- Item 15 -->
-				<li class="portfolio-item mix all Motor" data-my-order="15">
+				<li class="portfolio-item mix all Interiores" data-my-order="15">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM3.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II3.jpg" alt="II3"/>
 							</div>
 						</div>							
 				</li>
-				
+
 				<!-- Item 16 -->
-				<!-- <li class="portfolio-item mix all Deporte" data-my-order="16">
-					<a href="portfolio/sample-one.html" class="link-wrapper" rel="item-four">
+				<li class="portfolio-item mix all Naturaleza" data-my-order="16">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Deporte/ID3.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN4.jpg" alt="IN4"/>
 							</div>
-						</div>
-					</a>							
-				</li> -->
+						</div>							
+				</li>
 				
 				<!-- Item 17 -->
-				<li class="portfolio-item mix all Creativa" data-my-order="17">
+				<li class="portfolio-item mix all Urbana" data-my-order="17">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Creativa/IC3.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Urbana/IU4.jpg" alt="IU4"/>
 							</div>
 						</div>							
 				</li>
-				
+
+
 				<!-- Item 18 -->
-				<li class="portfolio-item mix all Interiores" data-my-order="18">
+				<li class="portfolio-item mix all Motor" data-my-order="18">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Interiores/II3.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-
-				<!-- Item 19 -->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="19">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen"src="images/works/Naturaleza/IN4.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-				
-				<!-- Item 20 -->
-				<li class="portfolio-item mix all Urbana" data-my-order="20">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Urbana/IU4.jpg" alt=""/>
-							</div>
-						</div>							
-				</li>
-
-
-				<!-- Item 21 -->
-				<li class="portfolio-item mix all Motor" data-my-order="21">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM4.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM4.jpg" alt="IM4"/>
 							</div>
 						</div>						
 				</li>
 				
-				<!-- Item 22 -->
-				<li class="portfolio-item mix all Deporte" data-my-order="22">
+				<!-- Item 19 -->
+				<li class="portfolio-item mix all Deporte" data-my-order="19">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Deporte/ID4.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Deporte/ID4.jpg" alt="ID4"/>
 							</div>
 						</div>							
 				</li>
-				<!-- Item 44-->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="44">
+				<!-- Item 20-->
+				<li class="portfolio-item mix all Naturaleza" data-my-order="20">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN11.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN11.jpg" alt="IN11"/>
 							</div>
 						</div>							
 				</li>
-				<!-- Item 23 -->
-				<li class="portfolio-item mix all Creativa" data-my-order="23">
+				<!-- Item 21 -->
+				<li class="portfolio-item mix all Creativa" data-my-order="21">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC4.jpg" alt=""/>
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC4.jpg" alt="IC4"/>
 							</div>
 						</div>							
 				</li>
 				
-				<!-- Item 24 -->
-				<li class="portfolio-item mix all Interiores" data-my-order="24">
+				<!-- Item 22 -->
+				<li class="portfolio-item mix all Interiores" data-my-order="22">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II4.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Interiores/II4.jpg" alt="II4"/>
 							</div>
 						</div>
 				</li>
 
-				<!-- Item 25 -->
-				<li class="portfolio-item mix all Deporte" data-my-order="25">
+				<!-- Item 23 -->
+				<li class="portfolio-item mix all Deporte" data-my-order="23">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Naturaleza/IN5.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN5.jpg" alt="IN5"/>
+							</div>
+						</div>							
+				</li>
+
+				<!-- Item 24-->
+				<li class="portfolio-item mix all Urbana" data-my-order="24">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU5.jpg" alt="IU5"/>
+							</div>
+						</div>							
+				</li>
+
+				<!-- Item 25 -->
+				<li class="portfolio-item mix all Naturaleza" data-my-order="25">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN6.jpg" alt="IN6"/>
 							</div>
 						</div>							
 				</li>
 
 				<!-- Item 26 -->
-				<li class="portfolio-item mix all Urbana" data-my-order="26">
+				<li class="portfolio-item mix all Naturaleza" data-my-order="26">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU5.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN7.jpg" alt="IN7"/>
 							</div>
 						</div>							
 				</li>
 
 				<!-- Item 27 -->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="27">
+				<li class="portfolio-item mix all Urbana" data-my-order="27">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN6.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Urbana/IU7.jpg" alt="IU7"/>
 							</div>
 						</div>							
 				</li>
 
 				<!-- Item 28 -->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="28">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
+				<li class="portfolio-item mix all Naturaleza" data-my-order="28">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU6.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN8.jpg" alt="IN8"/>
 							</div>
-						</div>
-					</a>							
-				</li> -->
-				
+						</div>							
+				</li>
+
 				<!-- Item 29 -->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="29">
+				<li class="portfolio-item mix all Creativa" data-my-order="29">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN7.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC5.jpg" alt="IC5"/>
 							</div>
 						</div>							
 				</li>
 
-				<!-- Item 30 -->
-				<li class="portfolio-item mix all Urbana" data-my-order="30">
+				<!-- Item 30-->
+				<li class="portfolio-item mix all Motor" data-my-order="30">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Urbana/IU7.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM5.jpg" alt="IM5"/>
 							</div>
 						</div>							
 				</li>
-
-				<!-- Item 31 -->
+				
+				<!-- Item 31-->
 				<li class="portfolio-item mix all Naturaleza" data-my-order="31">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN8.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Naturaleza/IN9.jpg" alt="IN9"/>
 							</div>
 						</div>							
 				</li>
 
-				<!-- Item 32 -->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="32">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
+				<!-- Item 32-->
+				<li class="portfolio-item mix all Urbana" data-my-order="32">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU8.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU9.jpg" alt="IU9"/>
 							</div>
-						</div>
-					</a>							
-				</li> -->
+						</div>						
+				</li>
 
-				<!-- Item 33 -->
-				<li class="portfolio-item mix all Creativa" data-my-order="33">
+				<!-- Item 33-->
+				<li class="portfolio-item mix all Motor" data-my-order="33">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC5.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Motor/IM7.jpg" alt="IM7"/>
+							</div>
+						</div>						
+				</li>
+
+				<!-- Item 34-->
+				<li class="portfolio-item mix all Naturaleza" data-my-order="34">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Naturaleza/IN10.jpg" alt="IN10"/>
 							</div>
 						</div>							
 				</li>
-
-				<!-- Item 34 -->
-				<!-- <li class="portfolio-item mix all Deporte" data-my-order="34">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Deporte/ID5.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
 
 				<!-- Item 35-->
-				<!-- <li class="portfolio-item mix all Interiores" data-my-order="35">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
+				<li class="portfolio-item mix all Urbana" data-my-order="35">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Interiores/II5.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU10.jpg" alt="IU10"/>
 							</div>
-						</div>
-					</a>							
-				</li> -->
+						</div>						
+				</li>
 
 				<!-- Item 36-->
 				<li class="portfolio-item mix all Motor" data-my-order="36">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM5.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM8.jpg" alt="IM8"/>
 							</div>
 						</div>							
 				</li>
 
+				
+
 				<!-- Item 37-->
-				<!-- <li class="portfolio-item mix all Motor" data-my-order="37">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
+				<li class="portfolio-item mix all Urbana" data-my-order="37">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Motor/IM6.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU11.jpg" alt="IU11"/>
 							</div>
-						</div>
-					</a>							
-				</li> -->
+						</div>							
+				</li>
 
 				<!-- Item 38-->
 				<li class="portfolio-item mix all Naturaleza" data-my-order="38">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Naturaleza/IN9.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN12.jpg" alt="IN12"/>
 							</div>
 						</div>							
 				</li>
-
+				
 				<!-- Item 39-->
 				<li class="portfolio-item mix all Urbana" data-my-order="39">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "class="imagen" src="images/works/Urbana/IU9.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU12.jpg" alt="IU12"/>
 							</div>
-						</div>						
+						</div>							
 				</li>
 
 				<!-- Item 40-->
-				<li class="portfolio-item mix all Motor" data-my-order="40">
+				<li class="portfolio-item mix all Naturaleza" data-my-order="40">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Motor/IM7.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN14.jpg" alt="IN14"/>
 							</div>
-						</div>						
+						</div>							
 				</li>
 
 				<!-- Item 41-->
 				<li class="portfolio-item mix all Naturaleza" data-my-order="41">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Naturaleza/IN10.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN15.jpg" alt="IN15"/>
 							</div>
 						</div>							
 				</li>
 
-				<!-- Item 42-->
-				<li class="portfolio-item mix all Urbana" data-my-order="42">
+			<!-- Item 42-->
+				<li class="portfolio-item mix all Creativa" data-my-order="42">
 						<div class="portfolio-hover">
 							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU10.jpg" alt="" />
-							</div>
-						</div>						
-				</li>
-
-				<!-- Item 43-->
-				<li class="portfolio-item mix all Motor" data-my-order="43">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Motor/IM8.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-
-				
-
-				<!-- Item 45-->
-				<li class="portfolio-item mix all Urbana" data-my-order="45">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU11.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-
-				<!-- Item 46-->
-				<!-- <li class="portfolio-item mix all Motor" data-my-order="46">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Motor/IM9.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-
-				<!-- Item 47-->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="47">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN12.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-				
-				<!-- Item 48-->
-				<li class="portfolio-item mix all Urbana" data-my-order="48">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Urbana/IU12.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-
-				<!-- Item 49-->
-				<!--<li class="portfolio-item mix all Naturaleza" data-my-order="49">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN13.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li>-->
-				
-				<!-- Item 50-->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="50">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in "  class="imagen" src="images/works/Urbana/IU13.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-
-				<!-- Item 51-->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="51">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN14.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-				
-				<!-- Item 52-->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="52">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU14.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-
-				<!-- Item 53-->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="53">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU15.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-				
-				
-				<!-- Item 54-->
-				<li class="portfolio-item mix all Naturaleza" data-my-order="54">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Naturaleza/IN15.jpg" alt="" />
-							</div>
-						</div>							
-				</li>
-			
-				<!-- Item 55-->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="55">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU16.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li> -->
-				
-				
-				<!-- Item 56-->
-				<!-- <li class="portfolio-item mix all Urbana" data-my-order="56">
-					<a href="portfolio/sample-three.html" class="link-wrapper" rel="item-six">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " id="miimagen" class="imagen" src="images/works/Urbana/IU17.jpg" alt="" />
-							</div>
-						</div>
-					</a>							
-				</li>
-				</div> -->
-				
-			<!-- Item 57-->
-				<li class="portfolio-item mix all Creativa" data-my-order="57">
-						<div class="portfolio-hover">
-							<div class="portfolio-hover-content">
-								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC6.jpg" alt="" />
+								<img data-enlargeable width="100" style="cursor: zoom-in " class="imagen" src="images/works/Creativa/IC6.jpg" alt="IC6"/>
 							</div>
 						</div>							
 				</li>
@@ -756,272 +588,233 @@
 				
 		</section>
 		
-		<!-- Portfolio details (AJAX) -->
-		<section id="portfolio-details" class="sec-pad"></section>
+			<video style="margin-top: 70px;" class="vid video-fluid" autoplay loop muted >
+				<source  src="videos/jmp.mp4" type="video/mp4"/>
+				</video>
 		
-<section id="audiovisuales" style="background-color: black;" class="about sec-pad">
-			<div class="container">
-				
-						
+			<section id="audiovisuales" style="background-color: black;" class="portfolio sec-pad ">
+			<div class="container">			
 				<!-- Section title -->
 				<div  class="section-title text-center col-md-8 offset-md-2">
 
-				<div class="btn-group dropright" style="background-color: black;">
+					<div class="btn-group dropright" style="background-color: black;">
+						<h1 style="color: white;padding-bottom: 20px;padding-top: 40px;" class="text-center">AUDIOVISUALES</h1>
+					</div>
 
-  				<h1 style="color: white;padding-bottom: 20px;padding-top: 20px;" class="text-center">AUDIOVISUALES</h1>
+				<p>Galería de Videos</p>
 				</div>
-
-				<p>Galería de videos</p>
-			</div>
 		
 
 						
 						<!--Carousel Wrapper-->
-	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li style="margin: 0 15px -40px 3px;" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li style="margin: 0 15px -40px 3px;"data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li style="margin: 0 15px -40px 3px;"data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-     <video alt="1 slide" width="95%" class="video-fluid" autoplay loop muted controls>
-        <source  src="videos/VideoJM.mp4" type="video/mp4" />
-    	</video>
-    </div>
-    <div class="carousel-item">
-      <video alt="1 slide" width="95%" class="video-fluid" autoplay loop muted controls>
-        <source  src="videos/VideoJM.mp4" type="video/mp4" />
-    	</video>
-    </div>
-    <div class="carousel-item">
-      <video alt="1 slide" width="95%" class="video-fluid" autoplay loop muted controls>
-        <source  src="videos/VideoJM.mp4" type="video/mp4" />
-    	</video>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-	</div>
+				<div  id="carouselExampleIndicators" class="carousel slide audioVD" data-ride="carousel">
+					<ol class=" carousel-indicators ">
+						<li style="margin: 12px 15px -40px 3px;" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li style="margin: 12px 15px -40px 3px;" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li style="margin: 12px 15px -40px 3px;" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<video width="95%" class="video-fluid" autoplay loop muted controls >
+							<source  src="videos/VideoJM.mp4" type="video/mp4" />
+							</video>
+						</div>
+
+						<div class="carousel-item">
+							<video width="95%" class="video-fluid" autoplay loop muted controls>
+							<source  src="videos/Sprinter.mp4" type="video/mp4" />
+							</video>
+						</div>
+
+						<div class="carousel-item">
+							<video width="95%" class="video-fluid" autoplay loop muted controls >
+							<source  src="videos/Moya.mp4" type="video/mp4" />
+							</video>
+						</div>
+					</div>
+
+						<a  class="carousel-control-prev audioVAI" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span  class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</a>
+						<a  class="carousel-control-next audioVAD" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span  class="carousel-control-next-icon" aria-hidden="true"></span>
+						</a>
+				</div>
+			</div>
+
 		</section>
 		
-		<section style="background-color: black">
 		
-			<div  class="container">
-  <section style="background: black;padding-top: 2.5em;">
-			<h1 style="color: white;padding-bottom: 25px;" class="text-center">YOUTUBE VIDEOS</h1>
+  			<section style="background: black;padding-top: 2.5em;">
+			<h1 style="color: white;padding-top: 50px;" class="text-center">YOUTUBE VIDEOS</h1>
+
+			</section>
+
+		
+		<section style="background: black;padding-top: 2.3em; margin-bottom: 00px;" class="contact sec-pad alter-bg">
 			<div class="container">
-  			
-  		</div>
-		</section>
-  <p style="color: white;font-size: 20px;margin-top: 25px;">Videos Promocionales:</p>
-  <hr class="hr" />
-  <div class="row">
+				<nav class="meni" >
+					<ul>
+						<li class="Promocional "><a  class="btn-menu" data-filter="Promocional"><p style="color: white; padding-top: 20px;">Promocionales</p></a></li>
+						<li class="Diseños"><a  class="btn-menu" data-filter="Diseños"><p style="color: white; padding-top: 20px;">Diseños Gráficos</p></a></li>
+						<li class="Coorporativos"><a class="btn-menu" data-filter="Coorporativos"><p style="color: white; padding-top: 20px;">Coorporativos</p></a></li>
+					</ul>
+				</nav>
+		
+				<div class="galeria">
 
-  	
-     <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-      
-          <iframe title=""  class="YT" src="https://www.youtube.com/embed/b2RdGkM2nM8" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Svengali Notepad.</p>
-          </div>
-    
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-   
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/DQb7mhCIt4M" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">HEI´S Notes by Adolfo Masyebra.</p>
-          </div>
-      
-      </div>
-    </div>
-    
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-      
-          <iframe  title="#" class="YT" src="https://www.youtube.com/embed/Uwh4P2oizAY" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Arbey Production Set.</p>
-          </div>
-     
-      </div>
-    </div>
-</div>
-  
+					<div class="title-img" >
+						
+					</div>
+		
+					<div class="box-img Promocional">
+						<iframe title=""  class="YT" src="https://www.youtube.com/embed/b2RdGkM2nM8" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Svengali Notepad.</p>
+						</div>
+					</div>
+		
+					<div class="box-img Diseños">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/tn6xuTm9YdA" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Diseño 1.</p>
+						</div>
+					</div>
+		
+					<div class="box-img Coorporativos">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/mDpUlzs318s" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Apartamentos Flor de Lavanda.</p>
+						</div>
+					</div>
+		
+					<div class="box-img Coorporativos">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/Y3oCIDjQ0iU" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Club Deportivo Chiloeches.</p>
+						</div>
+					</div>
+		
+					<div class="box-img Promocional">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/DQb7mhCIt4M" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">HEI´S Notes by Adolfo Masyebra.</p>
+						</div>
+					</div>
+					
+					<div class="box-img Promocional">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/QKG2BDNMkOc" allowfullscreen></iframe>
+						<div class="caption">
+						<p style="color: white;">Promocional Sprinter.</p>
+						</div>
+					</div>
+					<div class="box-img Diseños">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/1fyArp-PifU" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Diseño 2.</p>
+						</div>
+					</div>
+		
+					<div class="box-img Promocional">
+						<iframe  title="#" class="YT" src="https://www.youtube.com/embed/yElBcZMQ6g8" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Arbey Production Set.</p>
+						</div>
+					</div>
 
-  <p style="color: white;font-size: 20px;margin-top: 25px;">Videos Diseño Gráfico</p>
-  <hr class="hr" />    <div class="row">
-     <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-      
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/tn6xuTm9YdA" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Diseño 1.</p>
-          </div>
-      
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-       
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/1fyArp-PifU" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Diseño 2.</p>
-          </div>
-      
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-        
-          <iframe title="#"class="YT" src="https://www.youtube.com/embed/JFyv8LK9YKE" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Diseño 3.</p>
-          </div>
-     
-      </div>
-    </div>
+					<div class="box-img Diseños">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/JFyv8LK9YKE" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Diseño 3.</p>
+						</div>
+					</div>
 
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-       
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/JFfWdiQt80M" allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Diseño 4.</p>
-          </div>
-       
-      </div>
-    </div>
-</div>
+					<div class="box-img Diseños">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/JFfWdiQt80M" allowfullscreen></iframe>
+						<div class="caption">
+							<p style="color: white;">Diseño 4.</p>
+						</div>
+					</div>
+					<div class="box-img Coorporativos">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/mdmnMVOmyZk" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Mentalismo Adolfo Masyebra.</p>
+						</div>
+					</div>
 
- <p style="color: white;font-size: 20px;margin-top: 25px;">Videos Coorporativos</p>
-  <hr class="hr" />    <div class="row">
-  	
-  	<div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-        
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/mdmnMVOmyZk"allowfullscreen ></iframe>
-          <div class="caption">
-            <p style="color: white;">Apartamentos Flor de Lavanda.</p>
-          </div>
-        
-      </div>
-    </div>
+					<div class="box-img Promocional">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/3AxvhuAZA30" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Parkour.</p>
+						</div>
+					</div>
+s				
+					
+					<div class="box-img Promocional">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/wBHdDXocALE" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Videoclip-Portada.</p>
+						</div>
+					</div>
+					
+					<div class="box-img Promocional">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/NsrVr8Qut6w" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Promocional de Joyas.</p>
+						</div>
+					</div>
 
-     <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-        
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/mDpUlzs318s"allowfullscreen ></iframe>
-          <div class="caption">
-            <p style="color: white;">Apartamentos Flor de Lavanda.</p>
-          </div>
-        
-      </div>
-    </div>
+					<div class="box-img Coorporativos">
+						<iframe title="#" class="YT" src="https://www.youtube.com/embed/rFDu4lmCfeQ" allowfullscreen ></iframe>
+						<div class="caption">
+							<p style="color: white;">Tutti Shopp Winter Showroom.</p>
+						</div>
+					</div>
+					
+		
+				</div>
+			</div>
+			
 
+		</section>	
 
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-        
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/Y3oCIDjQ0iU"allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Club Deportivo Chiloeches.</p>
-          </div>
-      
-      </div>
-    </div>
-
-       
-</div>
-
- <p style="color: white;font-size: 20px;margin-top: 25px;">Videos fotográficos:</p>
-  <hr class="hr" />    <div class="row">
-
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-       
-          <iframe title="#" class="YT" src="https://www.youtube.com/embed/QKG2BDNMkOc"allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
-          </div>
-        
-      </div>
-    </div>
-
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="thumbnail">
-  
-          <iframe title="#"class="YT" src="https://www.youtube.com/embed/H6IUOFBiy1Y?start=3"allowfullscreen></iframe>
-          <div class="caption">
-            <p style="color: white;">JMP.</p>
-          </div>
-       
-      </div>
-    </div>
-
-</div>
-  </div>
-</div>
-		</section>
-		<section id="instagram" style="background: black;margin-top: 30px;">
-			<h1 style="color: white;padding-bottom: 25px;" class="text-center">INSTAGRAM</h1>
-		<script alt="#" src="https://apps.elfsight.com/p/platform.js" defer></script>
-	<div class="elfsight-app-a354cab0-35b8-48bb-986c-609c431cfec3"></div>
-</section>
 
 
 
 		<!-- Contact -->
-		<section style="background: black;padding-top: 2.5em;" id="contact" class="contact sec-pad alter-bg">
+		<section id="contact" style="background: black;padding-top: 0.3em; margin-bottom: 40px;" class="contact sec-pad alter-bg">
 			<div class="container">
-				<div class="row">
-					
+
+				<div class="row">					
 					<!-- Section title -->
-					
-						<h1 style="color: white;">CONTACTAME</h1>
+						<h1 style="color: white;padding-top: 20px;">CONTACTAME</h1>
 						  <hr class="hr" />
 
-					
 				</div>
 						
-
-					<!-- Contact info -->
-					
-						 <div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
-							<div style="color: white;" class="icon icon-basic-smartphone"></div>
-							<h3 style="color: white;">Phone Number</h3>
-							<p style="color: white;">+34 660 91 58 04</p>
-						</div>
-						
-						<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
-							<div style="color: white;" class="icon icon-basic-webpage-multiple"></div>
-							<h3 style="color: white;">Instagram</h3>
-							<p><a style="color: white;" href="#">@Javimatasphoto</a></p>
-						</div>
-				
-						<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
-							<div style="color: white;" class="icon icon-basic-mail"></div>
-							<h3 style="color: white;">Email</h3>
-							<p><a style="color: white;" href="mailto:Javiermatas15@gmail.com">Javiermatas15@gmail.com</a></p>
-						</div>
-						</div>
+				<!-- Contact info -->
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
+						<div style="color: white;" class="icon icon-basic-smartphone"></div>
+						<h3 style="color: white;">Phone Number</h3>
+					<a style="color: white;" href="tel:+34660915804">+34 660 91 58 04</a>
 					</div>
 					
-				</div>
+					<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
+						<div style="color: white;" class="icon icon-basic-webpage-multiple"></div>
+						<h3 style="color: white;">Instagram</h3>
+						<p><a style="color: white;" href="https://www.instagram.com/javimatasphoto/">@Javimatasphoto</a></p>
+
+
+					</div>
 			
+					<div class="col-lg-4 col-md-4 col-sm-12 contact-box">
+						<div style="color: white;" class="icon icon-basic-mail"></div>
+						<h3 style="color: white;">Email</h3>
+						<p><a style="color: white;" href="mailto:Javiermatas15@gmail.com">Javiermatas15@gmail.com</a></p>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -1037,7 +830,7 @@
 
 					</div>
 					<div class="col-lg-12 col-md-12 col-sm-12">
-					<div style="margin-top: 7px;margin-bottom: 7px;"><img alt="#" class="logoimg" src="images/logo2.png" style="width: 70px; height: 70px;" />X<img alt="#" class="logoimg" src="images/logo2.png" style="width: 70px; height: 70px;" /></div>
+					<div style="margin-top: -10px;margin-bottom: 7px;"><img alt="#" class="logoimg" src="images/logo2.png" style="width: 70px; height: 70px;" />X<img alt="#" class="logoimg" src="images/LogoDSV.png" style="margin-left: -20px; margin-bottom: 15px; width: 150px; height: 120px;" /></div>
 					</div>
 			 	</div>
 		  	</div>
@@ -1050,13 +843,8 @@
 		<script src="layout/plugins/bootstrap/js/bootstrap.min.js"></script>
 		
 		<!-- Plugins -->
-        <script src="layout/plugins/retina/retina.min.js"></script>
 		<script src="layout/plugins/backstretch/jquery.backstretch.min.js"></script>
-		<script src="layout/plugins/owlcarousel/owl.carousel.min.js"></script>
 		<script src="layout/plugins/mixitup/mixitup.min.js"></script>
-		<script src="layout/plugins/wow/wow.min.js"></script>
-		<script src="layout/plugins/isotope/jquery.isotope.min.js"></script>
-		<script src="layout/plugins/scrollto/jquery.scrollto.min.js"></script>
 		<script src="layout/plugins/validation/jqBootstrapValidation.js"></script>
 		
 		<!-- Main -->

@@ -1,0 +1,734 @@
+/************************
+    - Media queries -
+************************/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width:992px) {
+	body {
+		font-size:13px;
+	}
+	
+	.imagen{
+		width: 540px;
+		height:279px;
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.container {
+	    padding:0 30px;
+	}
+
+	.sec-pad {
+	    padding:70px 0px;
+	}
+
+	.intro .intro-text {
+	    font-size:28px;
+		line-height:36px;
+	}
+	
+	.intro-text span {
+		height:38px;	
+	}
+	
+	.intro-text .words-wrapper {
+		line-height:38px;
+	}
+	
+	.works-filters li {
+		font-size:11px;
+		margin:0;
+	}
+	
+}
+
+
+@media only screen and (max-width:2900px) {
+	.imagen{
+		width: 560px;
+		height:370px;
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 180px;
+		height:180px;
+	}
+	.audioVD{
+		margin-left: 40px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 330px;
+	}
+	.galeria .box-img {
+		width: calc(111px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:1730px) {
+	.imagen{
+		width: 450px;
+		height:360px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 180px;
+		height:180px;
+	}
+	.audioVD{
+		margin-left: 50px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 330px;
+	}
+	}
+@media only screen and (max-width:1660px) {
+	.imagen{
+		width: 420px;
+		height:350px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 180px;
+		height:180px;
+	}
+	.audioVD{
+		margin-right: 15px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 320px;
+	}
+	}
+@media only screen and (max-width:1590px) {
+	.imagen{
+		width: 410px;
+		height:330px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 180px;
+		height:180px;
+	}
+	.audioVD{
+		margin-right: 15px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 300px;
+	}
+	}
+@media only screen and (max-width:1500px) {
+	.imagen{
+		width: 390px;
+		height:315px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 15px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 300px;
+	}
+	}
+@media only screen and (max-width:1460px) {
+	.imagen{
+		width: 370px;
+		height:305px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 15px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 300px;
+	}
+	}
+@media only screen and (max-width:1400px) {
+	.imagen{
+		width: 370px;
+		height:290px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 170px;
+		height:170px;
+	}
+	.audioVD{
+		margin-right: 15px;
+	}
+	.audioVAI{
+		margin-left: -150px;
+	}
+	.audioVAD{
+		margin-right: -85px;
+	}
+	.vid{
+		width: 100%;
+		height: 280px;
+	}
+	}
+@media only screen and (max-width:1320px) {
+	.imagen{
+		width: 370px;
+		height:275px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 160px;
+		height:160px;
+	}
+	.audioVD{
+		margin-right: 20px;
+	}
+	.audioVAI{
+		margin-left: -105px;
+	}
+	.audioVAD{
+		margin-right: -60px;
+	}
+	.vid{
+		width: 100%;
+		height: 280px;
+	}
+	}
+@media only screen and (max-width:1230px) {
+	.imagen{
+		width: 320px;
+		height:250px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 150px;
+		height:150px;
+	}
+	.audioVD{
+		margin-right: -10px;
+	}
+	.audioVAI{
+		margin-left: -105px;
+	}
+	.audioVAD{
+		margin-right: -50px;
+	}
+	.vid{
+		width: 100%;
+		height: 280px;
+	}
+	.galeria .box-img {
+		width: calc(92px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:1120px) {
+	.imagen{
+		width: 320px;
+		height:225px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 140px;
+		height:140px;
+	}
+	.audioVD{
+		margin-right: 10px;
+	}
+	.audioVAI{
+		margin-left: -95px;
+	}
+	.audioVAD{
+		margin-right: -50px;
+	}
+	.vid{
+		width: 100%;
+		height: 280px;
+	}
+	}
+@media only screen and (max-width:1040px) {
+	.imagen{
+		width: 320px;
+		height:215px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 130px;
+		height:130px;
+	}
+	.audioVD{
+		margin-left: 30px;
+	}
+	.audioVAI{
+		margin-left: -90px;
+	}
+	.audioVAD{
+		margin-right: -50px;
+	}
+	.vid{
+		width: 100%;
+		height: 280px;
+	}
+	.galeria .box-img {
+		width: calc(92px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:950px) {
+	.imagen{
+		width: 320px;
+		height:195px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 120px;
+		height:120px;
+	}
+	.vid{
+		width: 100%;
+		height: 270px;
+	}
+	
+	}
+@media only screen and (max-width:840px) {
+	.imagen{
+		width: 320px;
+		height:170px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 110px;
+		height:110px;
+	}
+	.audioVD{
+		margin-left: 25px;
+	}
+	.audioVAI{
+		margin-left: -80px;
+	}
+	.audioVAD{
+		margin-right: -45px;
+	}
+	.vid{
+		width: 100%;
+		height: 260px;
+	}
+	.galeria .box-img {
+		width: calc(62px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+/* Small Devices, Tablets */
+@media only screen and (max-width:730px) {
+
+	.imagen{
+		width: 250px;
+		height:152px;
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.container {
+	    padding-left:30px;
+	    padding-right:30px;
+	    max-width:100%;
+	}
+	
+	.sec-pad {
+		padding:50px 0;
+	}
+	.logoimg{
+		width: 80px;
+		height:80px;
+	}
+	.audioVD{
+		margin-right: -40px;
+	}
+	.audioVAI{
+		margin-left: -70px;
+	}
+	.audioVAD{
+		margin-right: -35px;
+	}
+	.vid{
+		width: 100%;
+		height: 240px;
+	}
+	.galeria .box-img {
+		width: calc(90px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	
+}
+@media only screen and (max-width:690px) {
+	.imagen{
+		width: 320px;
+		height:148px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 80px;
+		height:80px;
+	}
+	.audioVD{
+		margin-right: -30px;
+	}
+	.audioVAI{
+		margin-left: -60px;
+	}
+	.audioVAD{
+		margin-right: -30px;
+	}
+	.vid{
+		width: 100%;
+		height: 240px;
+	}
+	.galeria .box-img {
+		width: calc(83px * 3);
+		margin: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:630px) {
+	.imagen{
+		width: 320px;
+		height:140px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 70px;
+		height:70px;
+	}
+	.audioVD{
+		margin-right: -25px;
+	}
+	.audioVAI{
+		margin-left: -65px;
+	}
+	.audioVAD{
+		margin-right: -45px;
+	}
+	.vid{
+		width: 100%;
+		height: 240px;
+	}
+	.galeria .box-img {
+		width: calc(100px * 3);
+		margin-left: 100px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+
+	}
+@media only screen and (max-width:560px) {
+	.imagen{
+		width: 320px;
+		height:130px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 100px;
+		height:100px;
+	}
+	.audioVD{
+		margin-right: -30px;
+	}
+	.audioVAI{
+		margin-left: -55px;
+	}
+	.audioVAD{
+		margin-right: -30px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	.galeria .box-img {
+		width: calc(100px * 3);
+		margin-left: 58px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:510px) {
+	.imagen{
+		width: 320px;
+		height:120px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 70px;
+		height:70px;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	.galeria .box-img {
+		width: calc(100px * 3);
+		margin-left: 50px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	}
+@media only screen and (max-width:480px) {
+	.imagen{
+		width: 320px;
+		height:110px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	.galeria .box-img {
+		width: calc(100px * 3);
+		margin-left: 40px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+	
+	}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width:440px) {
+	.imagen{
+		width: 250px;
+		height:100px;
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.container{
+		padding-left:35px;
+		padding-right:35px;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	.galeria .box-img {
+		width: calc(100px * 3);
+		margin-left: 10px;
+		border-radius: 2px;
+		box-shadow: 0 0 7px 0 rgba(0,0,0,.6);
+		overflow: hidden;
+	}
+}
+@media only screen and (max-width:420px) {
+	.imagen{
+		width: 320px;
+		height:90px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	}
+@media only screen and (max-width:400px) {
+	.imagen{
+		width: 320px;
+		height:80px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	}
+@media only screen and (max-width:380px) {
+	.imagen{
+		width: 320px;
+		height:70px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 180px;
+	}
+	}
+@media only screen and (max-width:340px) {
+	.imagen{
+		width: 320px;
+		height:60px;
+		
+		max-width: 100%;
+		transition: all 1s;
+	}
+	.logoimg{
+		width: 60px;
+		height:60px;
+	}
+	.audioVD{
+		margin-right: 0px;
+	}
+	.audioVAI{
+		margin-left: -40px;
+	}
+	.audioVAD{
+		margin-right: -28px;
+	}
+	.vid{
+		width: 100%;
+		height: 100px;
+	}
+	
+	}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width:360px) {
+	.portfolio .portfolio-wrapper .portfolio-item {
+		width:100%;
+	}
+	
+}
