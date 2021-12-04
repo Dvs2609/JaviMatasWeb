@@ -20,24 +20,7 @@
 			this.textSlider();
 			this.portfolio();
 		},
-		
-		//Page Loader
-		loader:function() {
-			if (JasonOptions.loader) {
-				$(window).on("load", function() {
-					$(".page-loader").fadeOut();
-					$(window).trigger("jason.complete");
-				});
-			} else {
-				$(document).ready(function() {
-					$(window).trigger("jason.complete");
-				});
-				
-				$(window).on("load", function() {
-					$(window).trigger("jason.complete");
-				});
-			}
-		},
+	
 		
 		//Menu
 		menu:function() {
@@ -156,62 +139,6 @@
 				});
 			}
 			
-			//Portfolio item
-			$(".portfolio-item a").on("click", function(e) {
-				e.preventDefault();
-				
-				var $that = $(this);				
-				
-				if ($that.parent().find(".loading").length===0) {
-					$("<div />").addClass("loading").appendTo($that.parent());
-					$that.parent().addClass("active");
-		
-					var $loading = $(this).parent().find(".loading"),
-						$container = $("#portfolio-details"), 
-						timer = 1;
-		
-					if ($container.is(":visible")) {
-						closeProject();
-						timer = 800;
-						$loading.animate({width:"70%"}, {duration:2000, queue:false});
-					}
-					
-					setTimeout(function() {
-						$loading.stop(true, false).animate({width:"70%"}, {duration:6000, queue:false});
-						
-						$.get($that.attr("href")).done(function(response) {
-							$container.html(response);
-							
-							$container.imagesLoaded(function() {
-								$loading.stop(true, false).animate({width:"100%"}, {duration:500, queue:true});
-								
-								$loading.animate({opacity:0}, {duration:200, queue:true, complete:function() {
-									$that.parent().removeClass('active');
-									$(this).remove();
-		
-									$container.show().css({opacity:0});
-									$container.animate({opacity:1}, {duration:600, queue:false});
-									
-									$(document).scrollTo($container, 600, {offset:{top:0, left:0}});
-									
-									$container.attr("data-current", $that.attr("rel"));
-								}});
-							});
-						}).fail(function() {
-							$that.parent().removeClass("active");
-							$loading.remove();
-						});
-					}, timer);
-				}
-			});
-		
-			//Close project
-			var closeProject = function() {
-				$("#portfolio-details").animate({opacity:0}, {duration:600, queue:false, complete:function() {
-					$(this).hide().html("").removeAttr("data-current");
-				}});
-			};
-			
 			$(document.body).on("click", "#portfolio-details .icon.close i", function() {
 				closeProject();
 			});
@@ -230,70 +157,7 @@
 					});
 				}
 			}
-	
-			$('a[href^="#view-"]').on("click", function() {
-				var $item = $('[rel="'+$(this).attr('href').substr(6)+'"]');
-				
-				if ($item.length>0) {
-					$(document).scrollTo("#portfolio", JasonOptions.scrollSpeed, {offset:{top:-85, left:0}, onAfter:function() {
-						$item.trigger("click");
-					}});
-				}
-			});
-		},
-		
-		//Share functions
-		share:function(network, title, image, url) {
-			//Window size
-			var w = 650, h = 350, params = "width="+w+", height="+h+", resizable=1";
-	
-			//Title
-			if (typeof title==="undefined") {
-				title = $("title").text();
-			} else if (typeof title==="string") {
-				if ($(title).length>0) {title = $(title).text();}
-			}
-			
-			//Image
-			if (typeof image==="undefined") {
-				image = "";
-			} else if (typeof image==="string") {
-				if (!/http/i.test(image)) {
-					if ($(image).length>0) {
-						if ($(image).is("img")) {
-							image = $(image).attr("src");
-						} else {
-							image = $(image).find('img').eq(0).attr("src");
-						}
-					} else {
-						image = "";
-					}
-				}
-			}
-			
-			//Url
-			if (typeof url==="undefined") {
-				url = document.location.href;
-			} else {
-				url = document.location.protocol+"//"+document.location.host+document.location.pathname+url;
-			}
-			
-			//Share
-			if (network==="twitter") {
-				return window.open("https://twitter.com/intent/tweet?text="+encodeURIComponent(title+" "+url), "share", params);
-			} else if (network==="facebook") {
-				return window.open("https://www.facebook.com/sharer/sharer.php?s=100&p[url]="+encodeURIComponent(url)+"&p[title]="+encodeURIComponent(title)+"&p[images][0]="+encodeURIComponent(image), "share", params);
-			} else if (network==="pinterest") {
-				return window.open("https://pinterest.com/pin/create/bookmarklet/?media="+image+"&description="+title+" "+encodeURIComponent(url), "share", params);
-			} else if (network==="google") {
-				return window.open("https://plus.google.com/share?url="+encodeURIComponent(url), "share", params);
-			} else if (network==="linkedin") {
-				return window.open("https://www.linkedin.com/shareArticle?mini=true&url="+encodeURIComponent(url)+"&title="+title, "share", params);
-			}
-			
-			return;
-		}	
-		
+		}		
 	};
 
 	/*IMAGENES GALERIA ZOOM*/
@@ -303,7 +167,7 @@
     function removeModal(){ modal.remove(); $('body').off('keyup.modal-close'); }
     modal = $('<div>').css({
         background: 'RGBA(0,0,0,0.8) url('+src+') no-repeat center',
-        backgroundSize: 'contain',
+        backgroundSize: 'auto 60%',
         width:'100%', height:'100%',
         position:'fixed',
         zIndex:'10000',
@@ -312,6 +176,7 @@
     }).click(function(){
         removeModal();
     }).appendTo('body');
+	
     //handling ESC
     $('body').on('keyup.modal-close', function(e){
       if(e.key==='Escape'){ removeModal(); } 
@@ -325,39 +190,6 @@
 
 })(jQuery);
 
-//Share Functions
-function shareTo(network, title, image, url) {
-	return $.JasonTheme.share(network, title, image, url);
-}
-
-//Scroll
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#scroll').fadeIn(); 
-        } else { 
-            $('#scroll').fadeOut(); 
-        } 
-    }); 
-    $('#scroll').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600); 
-        return false; 
-    }); 
-});
-
-$(document).ready(function() {
-  $('a[href^="*"]').click(function() {
-    var destino = $(this.hash);
-    if (destino.length == 0) {
-      destino = $('a[name="' + this.hash.substr(1) + '"]');
-    }
-    if (destino.length == 0) {
-      destino = $('html');
-    }
-    $('html, body').animate({ scrollTop: destino.offset().top }, 600);
-    return false;
-  });
-});
 
 
 
